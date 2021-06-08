@@ -1,0 +1,97 @@
+html,
+body,
+hr {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+a:active,
+a:visited,
+a:link,
+a:hover,
+a:focus {
+    color: #eeeeee;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    text-align: center;
+}
+#nav a:hover,
+#nav2 a:hover {
+    background-color: #00adb5;
+}
+#nav,
+#nav2 {
+    background-color: #393e46;
+    display: flex;
+}
+#nav {
+    justify-content: space-between;
+}
+#nav2 {
+    justify-content: space-around;
+}
+body {
+    color: #eeeeee;
+    background-color: #222831;
+}
+#blurb,
+#skills,
+#education,
+.project {
+    padding: 0.5rem 1rem;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+#headshot {
+    width: 300px;
+    border-radius: 100%;
+}
+#plate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #393e46;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+#plate:hover {
+    background-color: #00adb5;
+}
+#plate h3 {
+    margin: 12px 0;
+}
+footer {
+    background-color: #393e46;
+    padding: 0.5rem 1rem;
+}
+#resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#resume-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 100px 100px 50%;
+}
+.header {
+    font-weight: bold;
+    text-align: center;
+}
+.data {
+    padding: 0.25rem 0.5rem;
+}
+details,
+summary {
+    width: 95%;
+}
+details {
+    padding: 1rem 2rem;
+}
+#form {
+    padding: 0.5rem 1rem;
+}
