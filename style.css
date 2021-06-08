@@ -1,9 +1,22 @@
+* {
+    box-sizing: border-box;
+}
 html,
 body,
 hr {
     margin: 0;
     padding: 0;
     user-select: none;
+}
+#big-center {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+}
+#width {
+    width: 1200px;
+    max-width: 100%;
+    min-width: 725px;
 }
 a:active,
 a:visited,
