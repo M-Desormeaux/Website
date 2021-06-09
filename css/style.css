@@ -11,14 +11,17 @@ hr {
 #big-center {
     display: flex;
     justify-content: center;
-    align-self: flex-start;
+    min-height: 100vh;
+    background-color: #00adb5;
 }
 #width {
     width: 1200px;
     max-width: 100%;
     min-width: 750px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #393e46;
 }
 #width hr {
     width: 50%;
@@ -82,6 +85,9 @@ body {
 }
 #plate h3 {
     margin: 12px 0;
+}
+#FillSpace {
+    flex-grow: 1;
 }
 footer {
     background-color: #393e46;
