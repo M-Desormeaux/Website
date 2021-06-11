@@ -9,14 +9,13 @@ body,
 hr {
     margin: 0;
     padding: 0;
-    user-select: none;
 }
 #big-center {
     display: flex;
     justify-content: center;
     min-height: 100vh;
 }
-#width {
+#content {
     width: 1200px;
     max-width: 100%;
     min-width: 750px;
@@ -24,7 +23,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
-#width hr {
+#content hr {
     width: 50%;
     align-self: center;
 }
@@ -115,10 +114,22 @@ footer {
 #skills {
     max-width: 600px;
 }
-#resume-grid {
+#skills-grid {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.skill-item {
+    background-color: #393e46;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    border-left: 0px;
+    border-right: 0px;
+}
+.skill-item:hover {
+    background-color: #00adb5;
 }
 .header {
     font-weight: bold;
