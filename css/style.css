@@ -30,6 +30,20 @@ hr {
 #name {
     font-size: 2rem;
 }
+#nav {
+    background-color: #393e46;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0.75rem;
+    width: fit-content;
+    align-self: center;
+}
+#nav a:hover {
+    background-color: #00adb5;
+}
 #nav a:active,
 #nav a:visited,
 #nav a:link,
@@ -45,20 +59,24 @@ hr {
     width: 200px;
     text-align: center;
 }
+#nav a:active:first-child,
+#nav a:visited:first-child,
+#nav a:link:first-child,
+#nav a:hover:first-child,
+#nav a:focus:first-child {
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+}
+#nav a:active:last-child,
+#nav a:visited:last-child,
+#nav a:link:last-child,
+#nav a:hover:last-child,
+#nav a:focus:last-child {
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
 #project_devtalk a {
     color: #eeeeee;
-}
-#nav a:hover {
-    background-color: #00adb5;
-}
-#nav {
-    background-color: #393e46;
-    display: flex;
-    justify-content: center;
-    border: 2px solid black;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0.75rem;
 }
 body {
     color: #eeeeee;
@@ -69,6 +87,28 @@ body {
 #education,
 .project {
     padding: 0.5rem 1rem;
+}
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+}
+#skills-grid {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-self: center;
+}
+.skill-item {
+    width: fit-content;
+    background-color: #393e46;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    border-left: 0px;
+    border-right: 0px;
 }
 .center {
     display: flex;
@@ -111,23 +151,6 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-#skills {
-    max-width: 600px;
-}
-#skills-grid {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.skill-item {
-    background-color: #393e46;
-    padding: 1rem 2rem;
-    margin: 0.5rem;
-    border: 2px solid black;
-    border-radius: 1rem;
-    border-left: 0px;
-    border-right: 0px;
-}
 .skill-item:hover {
     background-color: #00adb5;
 }
@@ -163,5 +186,12 @@ details {
         min-height: 100%;
         display: flex;
         flex-direction: column;
+    }
+    #nav a:active,
+    #nav a:visited,
+    #nav a:link,
+    #nav a:hover,
+    #nav a:focus {
+        width: fit-content;
     }
 }
