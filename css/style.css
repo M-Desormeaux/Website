@@ -27,18 +27,15 @@ hr {
     width: 50%;
     align-self: center;
 }
-#name {
-    font-size: 2rem;
-}
 #nav {
     background-color: #393e46;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border: 2px solid black;
     border-left: 0px;
     border-right: 0px;
     border-radius: 0.75rem;
-    width: fit-content;
+    width: 98%;
     align-self: center;
 }
 #nav a:active,
@@ -46,11 +43,11 @@ hr {
 #nav a:link,
 #nav a:hover,
 #nav a:focus,
-#name a:active,
-#name a:visited,
-#name a:link,
-#name a:hover,
-#name a:focus {
+#name:active,
+#name:visited,
+#name:link,
+#name:hover,
+#name:focus {
     color: #eeeeee;
     padding: 0.5rem 1rem;
     width: 200px;
@@ -73,7 +70,7 @@ hr {
     border-bottom-right-radius: 0.75rem;
 }
 #nav a:hover,
-#plate:hover #name a {
+#plate:hover #name {
     background-color: #00adb5;
     color: black;
 }
@@ -127,21 +124,26 @@ body {
     border-radius: 100%;
 }
 #plate {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #393e46;
     margin-left: 1rem;
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
     border: 2px solid black;
     border-radius: 1rem;
     border-left: 0px;
     border-right: 0px;
+    text-align: center;
 }
 #plate:hover {
     background-color: #00adb5;
     color: black;
+}
+#plate h1 {
+    font-size: 2.5rem;
 }
 #plate h3 {
     margin: 12px 0;
@@ -183,11 +185,11 @@ details {
     padding-left: 40px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .center {
         flex-direction: column;
     }
-    #width {
+    #content {
         width: 1200px;
         max-width: 100%;
         min-width: 0;
@@ -201,5 +203,13 @@ details {
     #nav a:hover,
     #nav a:focus {
         width: fit-content;
+    }
+}
+@media screen and (max-width: 620px) {
+    #skills-grid {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
     }
 }
